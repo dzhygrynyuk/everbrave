@@ -1,0 +1,232 @@
+/* ================== General =================== */
+.page-growth-stories{
+    position: relative;
+    background: #fff;
+    z-index: 1001;
+    min-height: 100vh;
+}
+
+.growth-stories{
+    padding-top: 375px;
+    padding-bottom: 115px;
+
+    &_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2.title{
+            margin-bottom: 55px;
+        }
+
+        p{
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 22px;
+            margin-bottom: 30px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .wrap{
+        margin-top: 80px;
+    }
+
+    &_item{
+        width: 100%;
+        min-height: 560px;
+        background-color: #222;
+        margin-bottom: 65px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+        display: block;
+        position: relative;
+
+        &_overlay{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            color: #ffffff;
+            //padding: 30px 30px 30px 90px;
+            opacity: 0;
+            transition: 0.3s;
+
+            &_bgc{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            p{
+                max-width: 680px;
+                font-size: 40px;
+                line-height: 1.4;
+                font-weight: 800;
+                text-overflow: -o-ellipsis-lastline;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;  
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+            }
+        }
+
+        &_wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            //position: relative;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 30px 30px 30px 90px;
+        }
+
+        &-subtitle{
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-top: 20px;
+            display: block;
+            letter-spacing: 2px;
+        }
+
+        &-title{
+            letter-spacing: 4px;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+
+        &-arrow{
+            position: absolute;
+            bottom: 25px;
+        }
+
+        &:hover{
+            .growth-stories_item_overlay{
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    .small_banner_wrp{
+        margin-top: 65px;
+    }
+
+}
+
+
+/* ================== MEDIA =================== */
+@media (max-width: 1199px) {
+
+    .growth-stories{
+
+        &_item{
+            min-height: 480px;
+
+            &_overlay{
+                opacity: 1;
+
+                &_bgc{
+                    opacity: 0.95;
+                }
+
+                p{
+                    font-size: 36px;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .growth-stories{
+        padding-top: 200px;
+
+        &_top{
+            p{
+                max-width: 620px;
+            }
+        }
+
+        &_item{
+            &_overlay {
+                //padding: 30px 30px 30px 40px;
+            }
+            &_wrap{
+                padding: 30px 30px 30px 40px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .growth-stories{
+
+        &_top{
+            p{
+                font-size: 18px;
+            }
+
+            h2.title{
+                margin-bottom: 40px;
+            }
+        }
+        
+        &_item{
+            min-height: auto;
+            margin-bottom: 45px;
+
+            &_overlay {
+                padding: 30px 20px;
+                p{
+                    font-size: 22px;
+                }
+            }
+
+            &_wrap{
+                position: relative;
+                padding: 0;
+            }
+
+            &-arrow{
+                position: relative;
+                bottom: auto;
+                max-width: 60px;
+            }
+
+            &-title{
+                letter-spacing: 1px;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 575px) {
+    .growth-stories_item_overlay {padding: 30px 20px 20px;}
+    .growth-stories_item-arrow {height: auto;}
+    .growth-stories_item_overlay p{margin-bottom: 15px;}
+    .growth-stories_item-subtitle {margin-top: 15px;}
+}

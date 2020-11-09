@@ -1,0 +1,220 @@
+/* ================== General =================== */
+.page-careers{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+    background: #fff;
+}
+
+
+/* ================== Banner =================== */
+.careers_banner{
+    min-height: 900px;
+    background: #EF436F;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+    .container{
+        min-height: inherit;
+        display: flex;
+    }
+
+    .wrap{
+        width: 100%;
+        min-height: inherit;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_icons{
+
+        &-item{
+            position: absolute;
+        }
+
+    }
+
+    h2.title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &-desc{
+        max-width: 600px;
+        text-align: center;
+    }
+}
+
+
+/* ================== Kind of Talent =================== */
+.kind-talent{
+    padding-top: 130px;
+    padding-bottom: 390px;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    .flying-hero{
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    &_bgi{
+        position: absolute;
+        left: 0;
+        top: -200px;
+        width: 100%;
+        height: 1254px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .wrap{
+        width: 100%;
+        max-width: 654px;
+        position: relative;
+        z-index: 2;
+    }
+
+    h2.title{
+        margin-bottom: 40px;
+    }
+}
+
+/* ================== Current Openings =================== */
+.current-openings{
+    // min-height: 1300px;
+    min-height: auto;
+    position: relative;
+    background: #000;
+    color: #ffffff;
+    z-index: 2;
+    padding-bottom: 60px;
+    padding-top: 80px;
+
+    &_bgi{
+        position: absolute;
+        left: 0;
+        top: -130px;
+        width: 100%;
+        height: 1254px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;   
+    }
+
+    h2.title{
+        font-family: $font_proxima;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        display: block;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .desc{
+        max-width: 830px;
+        text-align: center;
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .wrap{
+        position: relative;
+        z-index: 2;
+        max-width: 960px;
+        margin: 0 auto;
+
+    }
+
+}
+
+.current-openings .wrap.indeed-box{
+    //background-color: #fff;
+    padding: 15px 30px; 
+    // margin-top: 75px; 
+    margin-bottom: 95px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* ================== MEDIA =================== */
+@media (max-width: 1619px) {
+
+    .kind-talent{
+
+        &_bgi{
+            top: -130px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1199px) {
+
+    .careers_banner{
+        min-height: 700px;
+
+        .cloud{
+            top: 30px;
+        }
+
+        h2.title{
+            margin-bottom: 20px;
+        }
+    }
+
+    .kind-talent{
+        padding-top: 50px;
+        padding-bottom: 230px;
+
+        .flying-hero{
+            max-width: 150px;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .kind-talent{
+
+        .flying-hero{
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .kind-talent{
+
+        h2.title{
+            max-width: 290px;
+        }
+
+    }
+
+}
+
+@media (max-width: 575px) {
+    .current-openings h2.title {font-size: 24px;}
+}

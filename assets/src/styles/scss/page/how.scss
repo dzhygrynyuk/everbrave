@@ -1,0 +1,549 @@
+/* ================== General =================== */
+.page-how{
+    overflow: hidden;
+    display: block;
+    z-index: 1001;
+    position: relative;
+}
+
+/* ================== Banner =================== */
+.how-banner{
+    height: 100vh;
+    background: #fff;
+    position: relative;
+    padding: 20px;
+
+    &:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 20px;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    &_text{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        min-height: inherit;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+
+        h2.title{
+            color: #ffffff;
+            margin-top: 50px;
+        }
+    }
+
+    .btn_black{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        z-index: 30;
+    }
+
+    .wrap{
+        width: 100%;
+        height: 100%;
+        min-height: inherit;
+        position: relative;
+        z-index: 2;
+    }
+
+    .start-animate{
+
+        .how-banner_item{
+            width: 140%;
+        }
+        
+    }
+
+    &_item{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        min-height: inherit;
+        position: absolute;
+        width: 0%;
+        overflow: hidden;
+        transition: 1s;
+        clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+
+        &_wrap{
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        &_bgc{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            // z-index: 1;
+            z-index: 2;
+            opacity: .7;
+        }
+    
+        &_bgi{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            // mix-blend-mode: multiply;
+            left: 0;
+            top: 0;
+        }
+
+        h2.title{
+            z-index: 4;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+    }
+
+    .arrow-bown{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 75px;
+        z-index: 3;
+    }
+
+
+}
+
+/* ================== Info =================== */
+.how-info{
+    padding: 150px 0 170px;
+    background: #000000;
+    color: #ffffff;
+
+    .wrap{
+        display: flex;
+        align-items: center;
+    }
+
+    &_text{
+
+        h2.title{
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        p{
+            max-width: 660px;
+            display: block;
+        }
+    }
+
+}
+
+/* ================== Menu =================== */
+.how-menu{
+    width: 100%;
+    height: 635px;
+    background: #fff;
+    position: relative;
+
+    .wrap{
+        display: flex;
+        height: inherit;
+        padding: 10px;
+    }
+
+    &_item{
+        height: 100%;
+        position: relative;
+        min-height: 100%;
+        width: 100%;
+        margin-right: 10px;
+        padding: 0 45px 45px 45px;
+        overflow: hidden;
+
+        &:hover{
+            .how-menu_item-bgc{
+                width: 96%;
+                height: 96%;
+            }
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &-bgc{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        &-icon{
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            transition: 0.3s;
+            opacity: 1;
+        }
+
+        &-more{
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+            display: block;
+            transition: 0.3s;
+            cursor: pointer;
+            width: fit-content;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        &-text{
+            height: 243px;
+            transition: 0.3s;
+            overflow: hidden;
+            max-width: 276px;
+            position: relative;
+
+            &-shadow{
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                width: 100%;
+                height: 21%;
+                opacity: .8;
+                transition: 0.3s;
+            }
+        }
+
+        &_content{
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            line-height: 1.1;
+
+            h2.title{
+                font-size: 40px;
+                text-transform: uppercase;
+                line-height: 1.1;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+            .desc{
+                font-size: 18px;
+                margin-bottom: 0;
+                display: block;
+            }
+
+            .btn{
+                margin-top: 30px;
+                width: 190px;
+            }
+
+        }
+
+        &.active{
+            
+            .desc{
+                height: auto;
+            }
+
+            .how-menu_item-icon,
+            .how-menu_item-text-shadow{
+                opacity: 0;
+            }
+
+        }
+
+    }
+
+}
+
+/* ================== Filling the Gap =================== */
+.filling-gap{
+    background: #3D3D3D;
+    color: #ffffff;
+    position: relative;
+    padding: 110px 0;
+
+    &_bgi{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            &:after{
+                content:'';
+                background: transparentize(darken(#3d3d3d, 90%), .25);
+                position: absolute;
+                top:0;
+                bottom:0;
+                width:100%;
+            }
+        }    
+    }
+
+    h2.title{
+        margin-bottom: 25px;
+    }
+
+    .wrap{
+        position: relative;
+        z-index: 2;
+        max-width: 660px;
+    }
+}
+
+/* ================== Tools =================== */
+.how-tools{
+    background: #fff;
+    position: relative;
+    padding: 120px 0 135px;
+
+    h2.title{
+        max-width: 430px;
+        margin-bottom: 25px;
+    }
+
+    .wrap{
+        max-width: 560px;
+        position: relative;
+    }
+
+    &-img{
+        position: absolute;
+        left: 600px;
+        top: 60px;
+        min-width: fit-content;
+    }
+
+    .small_banner_wrp{
+        margin-top: 100px;
+    }
+
+    .small_banner{
+        .description{
+            font-size: 40px;
+            display: block;
+            max-width: 640px;
+        }
+    }
+
+}
+
+
+/* ================== MEDIA =================== */
+@media (max-width: 1199px) {
+
+    .how-menu{
+        height: auto;
+
+        .wrap{
+            flex-wrap: wrap;
+            margin-right: -10px;
+            padding-bottom: 0;
+        }
+
+        &_item{
+            flex-basis: calc(100% / 2 - 10px);
+            padding-top: 110px;
+            margin-bottom: 10px;
+            height: inherit;
+
+            &-text{
+                height: auto;
+                max-width: 100%;
+                height: auto;
+
+                &-shadow{
+                    display: none;
+                }
+            }
+
+            &:hover{
+                .how-menu_item-bgc{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &_content{
+
+                h2.title{
+                    font-size: 36px;
+                }
+
+            }
+
+            &-more{
+                display: none;
+            }
+
+        }
+
+    }
+
+    
+    .how-info{
+
+        img{
+            width: 100%;
+            max-width: 460px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .page-how{
+        margin-top: 100px;
+    }
+
+    .how-banner{
+        height: calc(100vh - 100px);
+    }
+
+    .how-menu{
+
+        &_item{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    }
+
+    .how-tools{
+
+        .wrap{
+            max-width: 100%;
+        }
+
+        &-img{
+            position: relative;
+            left: 0;
+            top: 0;
+            max-width: initial!important;
+            width: 100%;
+        }
+
+    }
+
+    .how-info{
+        padding: 100px 0;
+
+        .wrap{
+            flex-direction: column;
+        }
+
+        img{
+            position: relative;
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+
+    .page-how{
+        margin-top: 75px;
+    }
+
+    .how-banner{
+        height: 300px;
+
+        .arrow-bown{
+            max-width: 35px;
+            bottom: 15px;
+        }
+    }
+
+    .how-menu{
+
+        .wrap{
+            margin-right: 0px;
+        }
+
+        &_item{
+            flex-basis: calc(100%);
+            margin-right: 0;
+            height: inherit;
+
+            &_content{
+                h2.title{
+                    font-size: 28px;
+                }
+            }
+        }
+
+    }
+
+    .filling-gap{
+        padding: 70px 0;
+    }
+
+    .how-tools{
+        padding: 70px 0 90px;
+
+        .small_banner{
+
+            .description{
+                font-size: 28px;
+            }
+
+        }
+
+    }
+
+    .how-info{
+        padding: 70px 0;
+    }
+
+    .how-banner_item h2.title {margin-top: -50px;}
+}
+
+@media (max-height: 750px){
+    .how-banner_item h2.title {
+        margin-top: 0px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .how-banner{
+        padding: 10px;
+        &:before{
+            width: 10px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<svg id="White_Arrow_-_Auto_Animate" data-name="White Arrow - Auto Animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="110" viewBox="0 0 47 110">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_585" data-name="Rectangle 585" width="110" height="47" transform="translate(-1714 -12741)" fill="none" stroke="#000" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow" transform="translate(-12694 1714) rotate(90)" clip-path="url(#clip-path)">
+    <g id="Group_355" data-name="Group 355">
+      <g id="Group_353" data-name="Group 353" transform="translate(-1770.495 -13087.98)">
+        <line id="Line_69" data-name="Line 69" x2="103.404" transform="translate(59.495 370.345)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="Line_70" data-name="Line 70" x2="19.365" y2="19.365" transform="translate(143.534 350.98)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="Line_71" data-name="Line 71" y1="19.365" x2="19.365" transform="translate(143.534 370.345)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      <g id="Group_354" data-name="Group 354" transform="translate(-1979.495 -13087.98)">
+        <line id="Line_69-2" data-name="Line 69" x2="103.404" transform="translate(59.495 370.345)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="Line_70-2" data-name="Line 70" x2="19.365" y2="19.365" transform="translate(143.534 350.98)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="Line_71-2" data-name="Line 71" y1="19.365" x2="19.365" transform="translate(143.534 370.345)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="110" viewBox="0 0 47 110">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_585" data-name="Прямоугольник 585" width="110" height="47" transform="translate(-1714 -12741)" fill="none" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow" transform="translate(-12694 1714) rotate(90)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_355" data-name="Сгруппировать 355">
+      <g id="Сгруппировать_353" data-name="Сгруппировать 353" transform="translate(-1770.495 -13087.98)">
+        <line id="Линия_69" data-name="Линия 69" x2="70" transform="translate(92.994 370.345)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Линия_70" data-name="Линия 70" x2="19.365" y2="19.365" transform="translate(143.534 350.98)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Линия_71" data-name="Линия 71" y1="19.365" x2="19.365" transform="translate(143.534 370.345)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="Сгруппировать_354" data-name="Сгруппировать 354" transform="translate(-1979.495 -13087.98)">
+        <line id="Линия_69-2" data-name="Линия 69" x2="70" transform="translate(59.495 370.345)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Линия_70-2" data-name="Линия 70" x2="19.365" y2="19.365" transform="translate(143.534 350.98)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Линия_71-2" data-name="Линия 71" y1="19.365" x2="19.365" transform="translate(143.534 370.345)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,391 @@
+.page-404{
+    position: relative;
+    z-index: 1001;
+    background-color: #0F0F0F;
+    padding-top: 310px;
+    padding-bottom: 0px;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .box-404{
+        color: $color_white;
+        text-align: center;
+        display: inline-block;
+        margin: 80px auto 0;
+        position: relative;
+        h1{
+            font-size: 220px;
+            line-height: 1;
+            font-family: $font_hero;
+            letter-spacing: 5px;
+            position: relative;
+            &:before{
+                content: '';
+                width: 125px;
+                height: 129px;
+                display: block;
+                background-image: url(../../img/moon_man_404.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: absolute;
+                top: -98px;
+                left: 177px;
+            }
+
+        }
+        h2{
+            font-family: $font_proxima;
+            font-size: 22px;
+            line-height: 34px;
+            font-weight: 400;
+            margin-top: 10px;
+            span{
+                font-weight: 800;
+            }
+        }
+        .star_1{
+            position: absolute;
+            width: 60px;
+            height: 74px;
+            left: -33px;
+            bottom: -28px;
+        }
+        .star_2{
+            position: absolute;
+            width: 72px;
+            height: 90px;
+            right: -60px;
+            top: -30px;
+        }
+        // &:before, &:after{
+        //     content: '';
+        //     display: block;
+        //     background-image: url(../../img/star_404.svg);
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     background-size: 100%;
+        //     position: absolute;
+        // }
+        // &:after{
+        //     width: 60px;
+        //     height: 74px;
+        //     left: -33px;
+        //     bottom: -28px;
+        // }
+        // &:before{
+        //     width: 72px;
+        //     height: 90px;
+        //     right: -60px;
+        //     top: -30px;
+        // }
+    }
+    .btn{
+        margin: 40px auto 0;
+    }
+    .star{
+        width: 48px;
+        position: absolute;
+        left: 60px;
+        top: 155px;
+    }
+    .rocket{
+        position: absolute;
+        // left: -6px;
+        left: -150px;
+        bottom: 0;
+        animation: roket 45s linear infinite;
+        img{
+            transform: rotate(22deg);
+        }
+    }   
+
+    .planet_icon{
+        position: absolute;
+        right: 70px;
+        top: 67px;
+    } 
+    .moon-box{
+        position: absolute;
+        right: -80px;
+        bottom: -108px;
+        // right: 0;
+        // bottom: 0;
+        .moon{
+            width: 320px;
+            height: 320px;
+            position: relative;
+            animation:spin 10s linear infinite;
+            animation-delay: .2s;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:before{
+                content: '';
+                display: block;
+                width: 147px;
+                height: 97px;
+                background-image: url(../../img/moon_inoplanet.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: absolute;
+                top: -64px;
+                left: 32px;
+            }
+        }
+    }
+}
+
+/* Star Top left */
+
+#star_1{animation: star_one 7.5s linear infinite;}
+#star_2{animation: star_two 5s linear infinite;}
+#star_3{animation: star_three 5s linear infinite;}
+
+@keyframes star_one {
+    0% {opacity: 1;}
+    10%{opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes star_two {
+    0% {opacity: 0;}
+    10%{opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes star_three {
+    0% {opacity: 0;}
+    10%{opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* Star Title left */
+
+#star_1_1{animation: star_one_one 7.5s linear infinite;}
+#star_1_2{animation: star_one_two 5s linear infinite;}
+#star_1_3{animation: star_one_three 5s linear infinite;}
+
+@keyframes star_one_one {
+    0% {opacity: 0;}
+    10%{opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes star_one_two {
+    0% {opacity: 1;}
+    10%{opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes star_one_three {
+    0% {opacity: 0;}
+    10%{opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* Star Title right */
+
+#star_2_1{animation: star_two_one 7.5s linear infinite;}
+#star_2_2{animation: star_two_two 5s linear infinite;}
+#star_2_3{animation: star_two_three 5s linear infinite;}
+
+@keyframes star_two_one {
+    0% {opacity: 1;}
+    10%{opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 1;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes star_two_two {
+    0% {opacity: 0;}
+    10%{opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes star_two_three {
+    0% {opacity: 0;}
+    10%{opacity: 0;}
+    20% {opacity: 1;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes roket {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(calc(100vw + 180px)) translateY(-300%);
+    }
+}
+
+/* ================== MEDIA =================== */
+@media (max-width: 1199px) {
+    // .page-404 .star_icon {top: 100px;}
+    .page-404 .star{top: 100px;}
+}
+
+
+@media (max-width: 991px) {
+   .page-404 .planet_icon {top: 100px;}
+   //.page-404 .star_icon {top: 125px;}
+   //.page-404 .rocket_icon {top: 775px;}
+   .page-404 .star{top: 125px;}
+   .page-404 .rocket{top: 775px;}
+   .page-404 {padding-top: 300px;}
+}
+
+@media (max-width: 767px) {
+    .page-404 .box-404 h1 {
+        font-size: 130px;
+    }    
+    .page-404 .box-404 h1:before {
+        width: 80px;
+        height: 85px;
+        top: -66px;
+        left: 116px;
+    }    
+    .page-404 {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 575px) { 
+    .page-404 {
+        padding-top: 135px;
+    }
+    // .page-404 .star_icon {
+    //     top: 134px;
+    //     width: 36px;
+    //     left: 25px;
+    // }
+    .page-404 .star {
+        top: 110px;
+        left: 25px;
+        svg{
+            width: 50px;
+        }
+    }
+    .page-404 .planet_icon {
+        top: 80px;
+        width: 55px;
+        right: 25px;
+    }
+    .page-404 .box-404 h2 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .page-404 .box-404:after, .page-404 .box-404:before{content: none;}
+    .page-404 .box-404 .star_1, .page-404 .box-404 .star_2{display: none;}
+
+    // .page-404 .rocket_icon {
+    //     bottom: 35px;
+    //     width: 91px;
+    //     top: initial;
+    // }
+    .page-404 .rocket {
+        bottom: 35px;
+        top: initial;
+        img{
+            width: 91px;
+        }
+    }
+
+    .page-404 .moon-box {
+        right: -45px;
+        bottom: -49px;
+        .moon{
+            width: 180px;
+            height: 180px;
+            &:before{
+                width: 90px;
+                height: 50px;
+                top: -35px;
+                left: 17px;
+            }
+        }
+    }
+
+    .page-404 .btn {
+        margin: 25px auto 0;
+    }
+    .page-404 .rocket img {
+        transform: rotate(12deg);
+    }    
+}
